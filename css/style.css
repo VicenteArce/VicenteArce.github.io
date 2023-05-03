@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+/* Estilo Todo */
+*{
+    box-sizing: border-box;
+    margin: 0;                      
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+
+/*----------------------------------------------------------------  */
+/* pongo el fondo de color que tendra todo el documento por default */
+.document{
+    background-color: rgb(69, 116, 204);
+
+}
+
+/*----------------------------------------------------------------  */
+/* Pongo un color al header, y hago un display flex y luego los centro,
+esto ultimo hace que el primer div(imagen y logo) queden hacia la derecha y que el segundo div(Home,...,Contanctos)
+quenden a la derecha, luego hago que el header tenga un alto de 120px, finalmente hago que tenga un padding de 0 y 7%.
+*/
+.header{
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+
+    padding: 0 7%;     /* arriba y abajo|| izquierda y derecha*/
+}
+
+/*----------------------------------------------------------------  */
+/* con cursor:pointer, hago que al pasar por el logo el raton se ponga como si estuviera apuntando a algo( ver mejor entrando en la pagina) */
+.header .logo{
+    cursor: pointer;
+    display: flex;
+}
+
+/*----------------------------------------------------------------  */
+/* Con la primera linea, hago que el texto no tenga ningun tipo de decoration */
+.header .logo a{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(252, 252, 252);
+    transition: all 0.3s;
+}
+.header .logo p{
+    margin: auto 5px;
+    font-size: 35px;
+    color: rgb(252, 252, 252);
+    font-weight: bold;
+}
+.header .logo p a:hover{
+    font-size: 35px;
+    color: black;
+}
+.header .logo img{
+    border-radius: 50%;
+    height:100px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .links_menu {
+    list-style: none; 
+    z-index: 1;   
+}
+
+.header .links_menu .elemento_nav{
+    display: inline-block;
+    padding: 0px 30px 0px 30px;
+    transition: all 0.3s;
+}
+
+.header .links_menu li:hover{
+    transform: scale(1.2);
+}
+
+.header .links_menu a{
+    font-size: 25px;
+    color: rgb(252, 252, 252);
+    text-decoration: none;
+}
+
+.header .links_menu li a:hover{
+    color:rgb(0, 0, 0);
+}
+
+.header .links_menu img{
+    height:40px;
+}
+
+.header .links_menu li .lista_contactos{
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    padding: 0px;
+    background-color: rgb(69, 116, 204);
+    list-style: none;
+    padding: 5px 12px 5px 12px;
+}
+
+.header .links_menu .lista_contactos li img{
+    height: 20px;
+    width: auto;
+    margin: 5px;
+}
+
+.header .links_menu .lista_contactos .sub_links{
+    font-size: 15px;
+    transition: all 0.3s;
+
+}
+
+.header .links_menu li:hover .lista_contactos{
+    display: block;
+
+}
+
+nav ul{
+    margin-bottom: 0;
+}
+nav {
+    position: relative;
+    z-index: 2;
+}
+  
+.carousel {
+    position: relative;
+    z-index: 1;
+    background-color: rgb(150, 150, 150);
+}
+
+.carousel-item{
+    width: 100%;
+    height: 700px;
+
+}
+
+.d-block{
+    width:auto;
+    height:700px;
+    object-fit: cover;
+}
+
+.carousel-caption h5, .carousel-caption p{
+    position: relative;
+    bottom: 250px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.content{
+    background-color: rgb(194, 194, 194);
+}
+.content h2{
+    font-weight: bold;
+    color: black;
+    padding-top:50px;
+    display: flex;
+    justify-content: center;
+}
+
+.content p{
+    padding:0.5% 10% 3% 10%;
+    text-align:center;
+    margin: 0;
+}
+
+
+.pilares{
+    background-color: rgb(7, 35, 87);
+    display: flex;
+    height: auto;
+    width: 100%;
+    color: aliceblue;
+}
+
+/* El codigo que sigue hace que cada pilar tenga el mismo ancho independiente del contenido. */
+.pilar{
+    flex: 1;       
+    flex-basis: 0;
+    width: 480px;
+}
+
+.pilares div:not(:last-child){
+    border-right: 1px solid snow;
+}
+
+.pilares div h6{
+    padding:0.5% 10% 0.5% 10%;
+    
+}
+.pilares div p{
+    padding:0.5% 10% 0.5% 10%;
+    font-size: 15px;
+    
+}
+
+.pilares div img{
+    height:100px;
+    width: auto;
+    margin: 2%;
+}
+
+.pilares div {
+    padding:2% 2.5% 0.5% 2.5%;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(69, 116, 204);
+    border-top: 1px solid snow;
+    padding-top: 20px;
+}
+.footer_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_1 li{
+    display: inline-block;
+    padding: 0px 25px;
+    transition: all 0.3s;
+}
+.footer_1 img{
+    height: 30px;
+    width: auto;
+    padding-right: 5px;
+}
+.footer_1 p{
+    color: azure;
+}
+.footer_1 a{
+    text-decoration: none;
+    color: azure;
+}
+
+.footer_1 li:hover{
+    transform: scale(1.2);
+}
+
+.footer_1 a:hover{
+    color: black;
+}
+

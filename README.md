@@ -3,7 +3,7 @@ Este es mi primer proyecto con html y css, espero en un futuro actualizarlo a me
 Mi objetivo es que esta pagina sea en un futuro un sitio en donde pueda compartir mis proyectos.
 
 ## IMPORTANTE
-Actualmente esta pagina web se puede visualizar de buena manera en una computadora.
+Actualmente esta pagina web se puede visualizar de buena manera exclusivamente en una computadora.
 
 ## ABOUT ME
 

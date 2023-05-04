@@ -1,5 +1,5 @@
 # Primera pagina Web (Futuro portafolio)
-Este es mi primer proyecto con html y css, espero en un futuro actualizarlo a medida que obtenga concocimientos en el rea del Front-end.
+Este es mi primer proyecto con html y css, espero en un futuro actualizarlo a medida que obtenga concocimientos en el area del Front-end y Back-end.
 Mi objetivo es que esta pagina sea en un futuro un sitio en donde pueda compartir mis proyectos.
 
 ## IMPORTANTE

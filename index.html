@@ -1,131 +1,141 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  </head>
-  <body class= "document">
-    <!-- Inicio Header -->
-    <header class = "header">
-      <div class = "logo">
-        <a href="index.html">
-          <img src = "imagen/logo.jpg" alt = "logo">  
-        </a>
-        <p><a href="index.html">Vicente Arce</p>
-      </div>
-      <nav>
-        <ul class = "links_menu">
-          <li class = "elemento_nav"><a href="index.html">Home <img src = "imagen/logoHome.png"></a></li>
-          <li class="elemento_nav"><a href="html/aboutme.html">About me</a></li>
-          <li class="elemento_nav"><a href="https://github.com/VicenteArce" target="_blank">My GitHub<img src="imagen/logoGitHub.png"></a></li>
-          <li class="elemento_nav">
-            <a href="">Contactos</a>
-            <ul class = "lista_contactos">
-              <li><a class="sub_links" target ="_blank" href="https://www.instagram.com/_.v.xcente._/"><img src="imagen/logoInstagram.png">Instagram</a></li>
-              <li><a class="sub_links" target ="_blank" href="https://www.youtube.com/channel/UCis7MgAvxBDg52aprsNePHA"><img src="imagen/logoYouTubefooter.png">YouTube</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Fin Header -->
-<!------------------------------->
-    <!-- Inicio Carrusel -->
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="imagen/imagen_carusel1.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Primera Imagen</h5>
-            <p>Imagen del cielo de Peñaflor.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="imagen/imagen_carusel2.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Segunda Imagen</h5>
-            <p>Imagen cerro de la virgen, peñaflor</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="imagen/imagen_carusel3.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Tercera Imagen</h5>
-            <p>Imagen planetario usach.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <img src="/Imagenes/logo.jpg" alt="" class="navbar__logo__img">
+      <a href="./index.html" class="navbar__tittle">Vicente Arce</a>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <!-- Fin Carrusel -->
-<!---------------------------->
-    <!-- Inicio contenido -->
-    <div class="content">
-      <h2>Welcome!</h2>
-      <p>Te doy la bienvenida a mi primera página web hecha unicamente con HTML y CSS.<br>
-      En esta página encontraras un nav, el cual tiene ciertas caracteristicas que me tomaron bastante tiempo en implementar (especificamente el "menu" desplegable que aparece al pasar el cursor encima de "contactos"),
-      al clickear "About me", se te redirigira a una página que habla exclusivamente sobre mi, además en la página principal ocupe bootstrap para el slider (carrusel) que aparece antes de este parrafo.<br>
-      Finalmente encontraras unos pilares en donde se puede poner distinta información y al fondo de todo un footer con una marca de Copyright y mis redes sociales.</p>
+    <ul class="navbar__nav">
+      <li class="navbar__nav__item">
+        <a target="_blank" href="./index.html" class="navbar__nav__item__links">Home</a>
+      </li>
+      <li class="navbar__nav__item">
+        <a target="_blank" href="./HTML/aboutme.html" class="navbar__nav__item__links">About Me</a>
+      </li>
+      <li class="navbar__nav__item">
+        <a target="_blank" href="https://github.com/VicenteArce" class="navbar__nav__item__links">My GitHub</a>
+      </li>
+      <li class="navbar__nav__item">
+        <a target="_blank" href="https://www.instagram.com/_.v.xcente._/" class="navbar__nav__item__links">Instagram</a>
+      </li>
+    </ul>
     </div>
-    <!-- Fin Contenido -->
-<!--------------------------->
-    <!-- Incio Pilares -->
-    <div class="pilares">
-      <div class="pilar">
-        <div>
-          <h6>Lenguajes</h6>
-          <p>Los lenguajes con los cuales se conforma la página en la que te encuentras son HTML y CSS, además se ocupo el framework Bootstrap.</p>
-          <img src ="imagen/logoHTML.png">
-          <img src ="imagen/logoCSS.png">
-        </div>  
-      </div>
-      <div class="pilar">
-        <div>
-          <h6>Biografia</h6>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti ex laborum voluptas? Nostrum et quasi, excepturi magnam minus officiis sunt provident dolore, enim fugiat obcaecati? Quisquam rem incidunt placeat vel.</p>
+  </nav>
+  <!-- Inicio Carrusel -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./Imagenes/imagen_carusel1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Primera Imagen</h5>
+          <p>Imagen del cielo de Peñaflor.</p>
         </div>
       </div>
-      <div class="pilar">
-        <h6>PlaceHolder</h6>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti ex laborum voluptas? Nostrum et quasi, excepturi magnam minus officiis sunt provident dolore, enim fugiat obcaecati? Quisquam rem incidunt placeat vel.</p>
+      <div class="carousel-item">
+        <img src="./Imagenes/imagen_carusel2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Segunda Imagen</h5>
+          <p>Imagen cerro de la virgen, peñaflor</p>
+        </div>
       </div>
-      <div class="pilar">
-        <h6>PlaceHolder</h6>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti ex laborum voluptas? Nostrum et quasi, excepturi magnam minus officiis sunt provident dolore, enim fugiat obcaecati? Quisquam rem incidunt placeat vel.</p>
+      <div class="carousel-item">
+        <img src="./Imagenes/imagen_carusel3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Tercera Imagen</h5>
+          <p>Imagen planetario usach.</p>
+        </div>
       </div>
     </div>
-    <!-- Fin Pilares -->
-<!-------------------------->
-    <!-- Inicio Footer -->
-    <footer>
-      <div class="footer_1">
-        <p>Copyright &#169 2023 Vicente Arce</p></li>
-        <div>
-          <ul>
-            <li><a class="elemento_footer" target="_blank" href="https://www.instagram.com/_.v.xcente._/"><img src="imagen/logoInstagram.png">Instagram</a></li>
-            <li><a class="elemento_footer" target="_blank" href="https://www.linkedin.com/in/vicente-arce-palacios-911b4a267/"><img src="imagen/logoLinkedinfooter.png">Linkedin</a></li>
-            <li><a class="elemento_footer" target="_blank" href="https://github.com/VicenteArce"><img src="imagen/logoGitHubfooter.png">GitHub</a></li>
-            <li><a class="elemento_footer" target="_blank" href="https://www.youtube.com/channel/UCis7MgAvxBDg52aprsNePHA"><img src="imagen/logoYouTubefooter.png">YouTube</a></li>
-          </ul>
-      </div>
-      
-    </footer>
-    <!-- Fin Footer -->
-  </body>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <!-- Fin Carrusel -->
+  <!-- Inicio contenido -->
+  <div class="content">
+    <h2>Welcome!</h2>
+    <p>Te doy la bienvenida a mi primera página web hecha unicamente con HTML y CSS.<br>
+      En esta página encontraras un nav, el cual tiene ciertas caracteristicas que me tomaron bastante tiempo en
+      implementar,
+      al clickear "About me", se te redirigira a una página que habla exclusivamente sobre mi, además en la página
+      principal ocupe bootstrap para el slider (carrusel) que aparece antes de este parrafo.<br>
+      Finalmente encontraras unos pilares en donde se puede poner distinta información y al fondo de todo un footer con
+      una marca de Copyright y mis redes sociales.</p>
+  </div>
+  <!-- Fin Contenido -->
+  <!-- Inicio Pilares -->
+  <div class="pilares">
+    <div class="pilares__pilar">
+      <h6 class="pilar__tittle">PlaceHolder</h6>
+      <p class="pilar__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero iure porro suscipit aut
+        qui minima nulla at sit inventore praesentium, voluptatem doloribus animi! Mollitia, ea incidunt! Obcaecati
+        assumenda nesciunt officiis.</p>
+    </div>
+    <div class="pilares__pilar">
+      <h6 class="pilar__tittle">PlaceHolder</h6>
+      <p class="pilar__parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias mollitia iure natus
+        libero unde, repudiandae maxime aliquid recusandae, impedit ratione nam incidunt suscipit expedita fuga labore
+        quae cum magni dolore.</p>
+    </div>
+    <div class="pilares__pilar">
+      <h6 class="pilar__tittle">PlaceHolder</h6>
+      <p class="pilar__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur illum quam aliquid
+        deleniti temporibus? Eum, commodi eos recusandae delectus iusto illum vitae aperiam excepturi facilis aliquid
+        hic consectetur, explicabo quisquam?</p>
+    </div>
+    <div class="pilares__pilar">
+      <h6 class="pilar__tittle">PlaceHolder</h6>
+      <p class="pilar__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, cum quia quisquam enim
+        nisi harum architecto ea iusto nesciunt blanditiis aspernatur inventore, illum, soluta ex cumque tempore animi
+        dolore minima!</p>
+    </div>
+  </div>
+  <!-- Inicio Footer -->
+  <footer class="footer">
+    <p class="footer__copyright">Copyright &#169 2023 Vicente Arce</p>
+    <ul class="footer__item">
+      <li class="footer__item__content">
+        <a href="https://www.instagram.com/_.v.xcente._/" target="_blank" class="footer__links"><img src="./Imagenes/instagram.png" alt="" class="footer__img">Instagram</a>
+      </li>
+      <li class="footer__item__content">
+        <a href="https://www.linkedin.com/in/vicente-arce-palacios-911b4a267/" target="_blank" class="footer__links"><img src="./Imagenes/linkedin.png" alt="" class="footer__img">Linkedin</a>
+      </li>
+      <li class="footer__item__content">
+        <a href="https://github.com/VicenteArce" target="_blank" class="footer__links"><img src="./Imagenes/github.png" alt="" class="footer__img">GitHub</a>
+      </li>
+      <li class="footer__item__content">
+        <a href="https://www.youtube.com/channel/UCis7MgAvxBDg52aprsNePHA" target="_blank" class="footer__links"><img src="./Imagenes/youtube.png" alt="" class="footer__img">YouTube</a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
 </html>

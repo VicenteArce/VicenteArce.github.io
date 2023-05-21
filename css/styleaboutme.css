@@ -1,205 +1,191 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Pangolin&family=Poppins:ital,wght@1,300&family=Ubuntu&display=swap');
 
-/* Estilo Todo */
 *{
-    box-sizing: border-box;
-    margin: 0;                      
+    margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+
+    font-family: 'Pangolin', cursive;
+    box-sizing: border-box;
 }
 
-html{
-    min-height: 100%;
+.navbar{
+    display: grid;
+    color: rgb(255, 255, 255);
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgb(134, 179, 251);
+    border-bottom: 1.5px solid black;
+    padding: 10px;
+    height: auto;
     
-    position: relative;
 }
-/*----------------------------------------------------------------  */
-/* pongo el fondo de color que tendra todo el documento por default */
-.document{
-    background-color: rgb(194, 194, 194);
+
+.navbar__logo{
+    display: flex;
+    align-items: center;
+    font-size: 160%;
+    font-weight: bold;
+    padding-left: 5%;
+}
+
+.navbar__logo__img{
+    border-radius: 50%;
+    width: 70px;
+    transition: 0.3s;
+}
+
+.navbar__logo__img:hover{
+    transform: scale(1.1);
+}
+
+.navbar__tittle{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.navbar__tittle:hover{
+    font-size: 115%;
+    color: #000;
+}
+
+.navbar__nav{
+    list-style: none;
+    display:flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0 20px 0 0;
+    
+}
+
+.navbar__nav__item{
+    place-self: center;
+    padding: 0 20px;
+}
+
+.navbar__nav__item__links{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 135%;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.navbar__nav__item__links:hover{
+    font-size: 150%;
+    color: #000;
+}
+
+.main__tittle{
+    text-align: center;
+    font-size: 500%;
+}
+
+.main__content{
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+}
+.main__parrafo{
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 220%;
+}
+.main__img{
+    height: 650px;
+}
+
+.footer{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 20px 0;
+    height: auto;
+    background-color: #000627;
+}
+
+.footer__item{
+    display: flex;
+    width: 100%;
+    list-style: none;
+    margin:0;
+    justify-content: space-evenly;
+    padding: 0;
+
+}
+
+.footer__item__content{
+    padding: 0 3% 0 0;
+}
+
+.footer__copyright{
+    color: rgb(255, 255, 255);
     margin: 0;
 }
-
-/*----------------------------------------------------------------  */
-/* Pongo un color al header, y hago un display flex y luego los centro,
-esto ultimo hace que el primer div(imagen y logo) queden hacia la derecha y que el segundo div(Home,...,Contanctos)
-quenden a la derecha, luego hago que el header tenga un alto de 120px, finalmente hago que tenga un padding de 0 y 7%.
-*/
-.header{
-    background-color: cornflowerblue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 120px;
-
-    padding: 0 7%;     /* arriba y abajo|| izquierda y derecha*/
-}
-
-/*----------------------------------------------------------------  */
-/* con cursor:pointer, hago que al pasar por el logo el raton se ponga como si estuviera apuntando a algo( ver mejor entrando en la pagina) */
-.header .logo{
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-/*----------------------------------------------------------------  */
-/* Con la primera linea, hago que el texto no tenga ningun tipo de decoration */
-.header .logo a{
+.footer__links{
     text-decoration: none;
-    font-size: 30px;
-    color: rgb(252, 252, 252);
-    transition: all 0.3s;
-}
-.header .logo p{
-    margin: auto 5px;
-    font-size: 30px;
-    color: rgb(252, 252, 252);
-    font-weight: bold;
-}
-.header .logo p a:hover{
-    font-size: 35px;
-    color: black;
-}
-.header .logo img{
-    border-radius: 50%;
-    height:100px;
-    width: auto;
-    transition: all 0.3s;
+    color: rgb(255, 255, 255);
+    
 }
 
-.header .logo img:hover{
-    transform: scale(1.2);
-}
-
-.header .links_menu {
-    list-style: none; 
-    z-index: 1;   
-}
-
-.header .links_menu .elemento_nav{
-    display: inline-block;
-    padding: 0px 30px 0px 30px;
-    transition: all 0.3s;
-}
-
-.header .links_menu li:hover{
-    transform: scale(1.2);
-}
-
-.header .links_menu a{
-    font-size: 25px;
-    color: rgb(252, 252, 252);
-    text-decoration: none;
-}
-
-.header .links_menu li a:hover{
-    color:rgb(0, 0, 0);
-}
-
-.header .links_menu img{
-    height:40px;
-}
-
-.header .links_menu li .lista_contactos{
-    display: none;
-    position: absolute;
-    top: 100%;
-    z-index: 1;
-    padding: 0px;
-    background-color: rgb(69, 116, 204);
-    list-style: none;
-    padding: 5px 12px 5px 12px;
-}
-
-.header .links_menu .lista_contactos li img{
+.footer__img{
     height: 20px;
-    width: auto;
-    margin: 5px;
-}
-
-.header .links_menu .lista_contactos .sub_links{
-    font-size: 15px;
-    transition: all 0.3s;
-
-}
-
-.header .links_menu li:hover .lista_contactos{
-    display: block;
-
-}
-
-nav ul{
-    margin-bottom: 0;
-}
-nav {
-    position: relative;
-    z-index: 2;
-}
-
-.contenido h1{
-    text-align: center;
-    font-size: 60px;
-    margin: 20px 0px 30px 0px;
-    font-weight: bold;
-}
-.descripcion_img {
-    background-color: rgb(194, 194, 194);
-    display: flex;
-    text-align: justify;
-}
-
-.descripcion_img p{
-    font-size: 30px;
-    margin: 0 30px;
-}
-#imagen_personal{
-    height: 600px;
-}
-
-
-footer{
-    width: 100%;
-    height: 80px;
-    background-color: rgb(69, 116, 204);
-    border-top: 1px solid snow;
-    padding-top: 20px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-.footer_1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(69, 116, 204);
-}
-
-.footer_1 li{
-    display: inline-block;
-    padding: 0px 25px;
-    transition: all 0.3s;
-}
-.footer_1 img{
-    height: 30px;
-    width: auto;
     padding-right: 5px;
 }
-.footer_1 p{
-    color: azure;
-}
-.footer_1 a{
-    text-decoration: none;
-    color: azure;
-}
 
-.footer_1 li:hover{
+.footer__item__content:hover{
     transform: scale(1.2);
-}
 
-.footer_1 a:hover{
-    color: black;
 }
 
 
+
+@media screen and (max-width: 800px){
+    .navbar{
+        display:flex;
+        flex-direction: column;
+    }
+    .navbar__logo{
+        justify-content: center;
+        padding: 0;
+    }
+    .navbar__nav{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .main__tittle{
+        text-align: center;
+        font-size: 200%;
+    }
+    .main__content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__parrafo{
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 100%;
+    }
+    .main__img{
+        display: none;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footer__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+    .footer__item__content{
+        padding: 5px;
+    }
+}

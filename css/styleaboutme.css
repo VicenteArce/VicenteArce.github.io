@@ -152,6 +152,16 @@ body{
 
 }
 
+@media screen and (max-width: 1200px){
+    .main__img{
+        display: none;
+    }
+    .main__content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 800px){
     .navbar{
         display:flex;
